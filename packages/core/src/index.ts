@@ -33,7 +33,6 @@ export type {
 // Contracts
 export { BaseContract } from './contracts/BaseContract';
 export type { BaseContractConfig, InvokeMethodOptions } from './contracts/BaseContract';
-export type { BaseContractConfig } from './contracts/BaseContract';
 export { VaultContract } from './contracts/VaultContract';
 // Strict argument interfaces for Soroban vault methods (issue #95).
 // These enforce compile-time typo detection (e.g. { amout } instead of { amount }).
@@ -48,14 +47,7 @@ export { Vault } from './contracts/Vault';
 export { VaultABI } from './contracts/abis/VaultABI';
 export type { ContractConfig } from './contracts/BaseContract';
 export type { VaultConfig, DepositParams, WithdrawParams, VaultInfo } from './contracts/Vault';
-// Soroban-native VaultContract config and param shapes.
-export type {
-  VaultConfig,
-  VaultInfo,
-  DepositParams,
-  WithdrawParams,
-} from './contracts/VaultContract';
-export type { ContractEvent, EventCallback } from './contracts/ContractEventEmitter';
+export type { ContractEvent } from './contracts/ContractEventEmitter';
 
 // Session
 export { ContractSession } from './session/contractSession';
@@ -141,11 +133,6 @@ export {
   UserRejectedError,
   ContractRevertError,
   toAxionveraError,
-  // New error utilities
-  ErrorCodes,
-  classifyError,
-  isRetryable,
-  shouldRetry,
 } from './errors/axionveraError';
 export type { RPCValidationMismatchErrorOptions } from './errors/axionveraError';
 

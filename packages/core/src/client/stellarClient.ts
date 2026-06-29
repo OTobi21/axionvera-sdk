@@ -104,6 +104,8 @@ export type GetContractEventsResult = {
   pagingToken?: string;
 };
 
+export type ContractEventResult = ParsedSorobanEvent;
+
 /** Snapshot version for forward-compatibility of (de)serialized state. */
 export const HYDRATION_STATE_VERSION = 1 as const;
 
